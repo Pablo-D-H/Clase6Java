@@ -47,7 +47,14 @@ public class Main {
             System.out.println(persona);
         }
 
+        double sueldoTotalPersona = p1.impuesto();
 
+        System.out.println("\nSueldo total de la persona " + p1.getNombre()+ " es: "+sueldoTotalPersona);
+
+
+        double sueldoTotalPersona2 = p2.impuesto(0.5);
+
+        System.out.println("\nSueldo total de la persona " + p2.getNombre()+ " es: "+sueldoTotalPersona2);
 
 
 

@@ -45,4 +45,24 @@ public class Persona {
     }
 
 
+    //Metodos
+
+    public double impuesto(){
+        double total=0;
+
+        if (this.getSueldo() > 1000.0){
+            total = this.getSueldo() - ((this.getSueldo() * 0.1) );
+        }
+
+        return total;
+    }
+
+    public double impuesto(double descuento){
+        double total=0;
+
+        total = this.getSueldo() - ((this.getSueldo() * descuento) );
+
+        return total;
+    }
+
 }
